@@ -58,7 +58,8 @@ h4 {
     gap: 30px;
 }
 
-.employment {
+.employment,
+.education {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -140,27 +141,39 @@ h4 {
     padding-top: 5px;
 }
 
-.programming-skills>div:nth-of-type(1) {
+.programming-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.programming-skills-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.programming-skills-item-one>div {
     width: 90%;
     background-color: green;
 }
 
-.programming-skills>div:nth-of-type(2) {
+.programming-skills-item-two>div {
     width: 80%;
     background-color: green;
 }
 
-.programming-skills>div:nth-of-type(3) {
+.programming-skills-item-three>div {
     width: 93%;
     background-color: green;
 }
 
-.programming-skills>div:nth-of-type(4) {
+.programming-skills-item-four>div {
     width: 80%;
     background-color: green;
 }
 
-.programming-skills>div:nth-of-type(5) {
+.programming-skills-item-five>div {
     width: 70%;
     background-color: green;
 }
@@ -184,7 +197,8 @@ h4 {
     border: dotted 1px lightgray;
 }
 
-.section-two-left-employment-title img {
+.section-two-left-employment-title img,
+.section-two-left-education-title img {
     height: 15px;
     width: 15x;
     rotate: 270deg;

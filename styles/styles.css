@@ -1,10 +1,11 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: #141414;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #bfc9d3;
 }
 
 p,
@@ -17,7 +18,7 @@ h4 {
 }
 
 .inner-page {
-    background-color: blue;
+    background-color: #282828;
     margin: 50px 25%;
     padding: 40px;
     display: flex;
@@ -42,6 +43,10 @@ h4 {
     gap: 40px;
 }
 
+.section-one-top-left-text>h4 {
+    color: #499ecf;
+}
+
 .section-one-top-right {
     display: flex;
     gap: 8px;
@@ -52,6 +57,15 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-weight: 700;
+}
+
+.section-one-top-right-information-response {
+    color: #8b8b8b
+}
+
+.section-one-top-right-information-response>p>a {
+    color: #539fb9
 }
 
 .section-two {
@@ -66,7 +80,8 @@ h4 {
     gap: 30px;
 }
 
-.employment-item {
+.employment-item,
+.education-item {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -81,8 +96,9 @@ h4 {
 .section-two-left-heading {
     display: flex;
     align-items: center;
-    background-color: aqua;
+    background-color: #373737;
     border-radius: 5px;
+    gap: 10px;
 }
 
 .section-two-left-heading>img {
@@ -108,8 +124,29 @@ h4 {
 .graphic-skill-square {
     height: 10px;
     width: 10px;
-    background-color: black;
 }
+
+.first-square {
+    background-color: #267eac;
+}
+
+.second-square {
+    background-color: #38a4e3;
+}
+
+.third-square {
+    background-color: #64ad1e;
+}
+
+.fourth-square {
+    background-color: #ffac32;
+}
+
+.fifth-square {
+    background-color: #d43900;
+}
+
+
 
 .language-skill-item {
     display: flex;
@@ -134,6 +171,24 @@ h4 {
     background-color: black;
 }
 
+.english-filled {
+    background-color: #49a7cd;
+}
+
+.french-filled {
+    background-color: #66a723
+}
+
+.spanish-filled {
+    background-color: #fcbd1b
+}
+
+.english-empty,
+.french-empty,
+.spanish-empty {
+    background-color: #232323;
+}
+
 .section-two-left-employment-header,
 .section-two-left-education-header {
     display: flex;
@@ -148,6 +203,11 @@ h4 {
 
 .section-two-left-employment-title>p {
     padding-top: 5px;
+}
+
+.section-two-left-employment-title-text>h4,
+.section-two-left-education-title-text>h4 {
+    color: #999999;
 }
 
 .programming-skills,
@@ -173,7 +233,21 @@ h4 {
 
 .programming-skills-item-one>.percentage-outer>.percentage-inner {
     width: 90%;
-    background-color: green;
+    background-color: #2b7dad;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.programming-skills-item-one>h4,
+.programming-skills-item-two>h4,
+.programming-skills-item-three>h4,
+.programming-skills-item-four>h4,
+.programming-skills-item-five>h4,
+.graphic-skill-item>p,
+.language-skill-item>p {
+    color: #7e7e80;
 }
 
 .programming-skills-item-two>.percentage-outer {
@@ -183,7 +257,11 @@ h4 {
 
 .programming-skills-item-two>.percentage-outer>.percentage-inner {
     width: 80%;
-    background-color: green;
+    background-color: #3ea7d7;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
 }
 
 .programming-skills-item-three>.percentage-outer {
@@ -193,7 +271,11 @@ h4 {
 
 .programming-skills-item-three>.percentage-outer>.percentage-inner {
     width: 93%;
-    background-color: green;
+    background-color: #69a722;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
 }
 
 .programming-skills-item-four>.percentage-outer {
@@ -203,7 +285,11 @@ h4 {
 
 .programming-skills-item-four>.percentage-outer>.percentage-inner {
     width: 80%;
-    background-color: green;
+    background-color: #ffbe24;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
 }
 
 
@@ -214,7 +300,11 @@ h4 {
 
 .programming-skills-item-five>.percentage-outer>.percentage-inner {
     width: 70%;
-    background-color: green;
+    background-color: #f82601;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
 }
 
 .programming-skills-item-one,
@@ -232,22 +322,21 @@ h4 {
     min-width: 105px;
     object-fit: cover;
     object-position: 50% 10%;
-    border: solid 5px white;
+    border: solid 3px #3b3c37;
     border-radius: 3px;
 }
 
 .ignore-parent-padding {
-    color: black;
+    border: solid 1px #505050;
     margin: 0 -40px;
 }
 
 .section-two-left-hr {
     width: 100%;
-    border: dotted 1px lightgray;
+    border: dotted 1px #3a3a3a;
 }
 
-.section-two-left-employment-title img,
-.section-two-left-education-title img {
+.section-two-left-employment-title img {
     height: 15px;
     width: 15x;
     rotate: 270deg;
@@ -255,6 +344,37 @@ h4 {
     filter: invert(100%);
     border-radius: 50%;
     margin-top: 5px;
+}
+
+.section-two-left-education-title img {
+    height: 15px;
+    width: 15x;
+    rotate: 270deg;
+    background-color: #995bb9;
+    filter: invert(100%);
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.section-two-left-heading>img {
+    filter: invert(100%);
+    background-color: #d76d33;
+}
+
+.education>.section-two-left-heading>img {
+    filter: invert(100%);
+    background-color: #995bb9;
+}
+
+.section-two-left-education-header>h3,
+.section-two-left-employment-header>h3 {
+    color: #686868
+}
+
+.programming-skills-header>h2,
+.graphic-skills-header>h2,
+.language-skills-header>h2 {
+    color: white;
 }
 
 @media (max-width: 1680px) {

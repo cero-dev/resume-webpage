@@ -23,6 +23,7 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 100px;
+    flex-wrap: wrap;
 }
 
 .section-one {
@@ -93,6 +94,9 @@ h4 {
 
 .section-two-right {
     min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .graphic-skill-item {
@@ -109,13 +113,18 @@ h4 {
 
 .language-skill-item {
     display: flex;
-    justify-content: space-between;
+    gap: 100px;
+
+}
+
+.language-skill-item>p {
+    min-width: 50px;
 }
 
 .language-skill-item-circles {
     display: flex;
     gap: 10px;
-    padding-right: 20px;
+    padding-right: 200px;
 }
 
 .language-skill-circle {
@@ -141,41 +150,81 @@ h4 {
     padding-top: 5px;
 }
 
-.programming-skills {
+.programming-skills,
+.graphic-skills,
+.language-skills {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.programming-skills-group {
+.programming-skills-group,
+.graphic-skills-group,
+.language-skills-group {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.programming-skills-item-one>div {
+.programming-skills-item-one>.percentage-outer {
+    width: 100%;
+    background-color: white;
+}
+
+.programming-skills-item-one>.percentage-outer>.percentage-inner {
     width: 90%;
     background-color: green;
 }
 
-.programming-skills-item-two>div {
+.programming-skills-item-two>.percentage-outer {
+    width: 100%;
+    background-color: white;
+}
+
+.programming-skills-item-two>.percentage-outer>.percentage-inner {
     width: 80%;
     background-color: green;
 }
 
-.programming-skills-item-three>div {
+.programming-skills-item-three>.percentage-outer {
+    width: 100%;
+    background-color: white;
+}
+
+.programming-skills-item-three>.percentage-outer>.percentage-inner {
     width: 93%;
     background-color: green;
 }
 
-.programming-skills-item-four>div {
+.programming-skills-item-four>.percentage-outer {
+    width: 100%;
+    background-color: white;
+}
+
+.programming-skills-item-four>.percentage-outer>.percentage-inner {
     width: 80%;
     background-color: green;
 }
 
-.programming-skills-item-five>div {
+
+.programming-skills-item-five>.percentage-outer {
+    width: 100%;
+    background-color: white;
+}
+
+.programming-skills-item-five>.percentage-outer>.percentage-inner {
     width: 70%;
     background-color: green;
+}
+
+.programming-skills-item-one,
+.programming-skills-item-two,
+.programming-skills-item-three,
+.programming-skills-item-four,
+.programming-skills-item-five {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 #self-portrait {
@@ -206,4 +255,28 @@ h4 {
     filter: invert(100%);
     border-radius: 50%;
     margin-top: 5px;
+}
+
+@media (max-width: 1680px) {
+    #self-portrait {
+        display: none;
+    }
+
+    .section-one-top {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-two {
+        flex-direction: column;
+    }
+
+    .section-two-left {
+        order: 2;
+    }
+
+    .section-two-right {
+        order: 1;
+    }
+
 }

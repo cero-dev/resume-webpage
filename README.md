@@ -6,3 +6,5 @@ Normalize.css source from: https://necolas.github.io/normalize.css/
 
 man in grey and black shirt credited to Albert Dera
 source: https://unsplash.com/photos/mans-grey-and-black-shirt-ILip77SbmOE
+
+Down arrow icon sourced from: https://icons8.com/icons/set/down-arrow

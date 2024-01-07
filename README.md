@@ -2,6 +2,8 @@
 
 This is a resume in webpage format, assigned as homework by perscholas. 
 
+Hosted Here: https://cero-dev.github.io/resume-webpage/
+
 # GIF Demonstration
 ![demo](https://github.com/cero-dev/resume-webpage/assets/153134353/bcf6cd5a-af5f-4b5d-929e-bd2e881423f2)
 

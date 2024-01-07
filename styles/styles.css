@@ -1,0 +1,18 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-page {
+    background-color: blue;
+    margin: 50px 25%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
